@@ -79,7 +79,7 @@ def scrape_ebay_data():
         
         #Extract Shipping Details:
              try:
-                shipping_details= product.find_element(By.XPATH, ".//*[contains(text(), 'shipping')]").text
+                shipping_details= product.find_element(By.XPATH, ".//span[contains(@class, 'dne-itemtile-delivery')]").text
                 print(shipping_details)
             except:
                 shipping_details = "N/A"
