@@ -1,7 +1,7 @@
 name: Ebay Tech Deals Scraper (Every 3 hours)
 on:
     schedule:
-        - cron: '0 */3 * * *'  # Run every 3 hours
+        #- cron: '0 */3 * * *'  # Run every 3 hours
     workflow_dispatch:        # Allows manual triggering
 jobs:
     scrape-ebay:
